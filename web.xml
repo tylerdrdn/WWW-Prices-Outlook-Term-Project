@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="file-upload" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	
+	<servlet>
+	
+		<servlet-name>shops</servlet-name>
+		
+		<servlet-class>getShopsOfAnArea</servlet-class>
+	
+	</servlet>
+	
+	<servlet>
+		
+		<servlet-name>categories</servlet-name>
+		
+		<servlet-class>getCat_getProd</servlet-class>
+	
+	</servlet>
+	
+	<servlet>
+		
+		<servlet-name>products</servlet-name>
+		
+		<servlet-class>get_Products</servlet-class>
+	
+	</servlet>
+		
+	<servlet>
+		
+		<servlet-name>list</servlet-name>
+		
+		<servlet-class>list</servlet-class>
+	
+	</servlet>
+
+	<servlet>
+		
+		<servlet-name>minimum_category</servlet-name>
+		
+		<servlet-class>minimum_category</servlet-class>
+	
+	</servlet>
+	
+	<servlet>
+		
+		<servlet-name>min_prod</servlet-name>
+		
+		<servlet-class>min_prod</servlet-class>
+	
+	</servlet>
+	
+	<servlet>
+		
+		<servlet-name>mega</servlet-name>
+		
+		<servlet-class>mega</servlet-class>
+	
+	</servlet>
+	
+	<servlet-mapping>
+		
+		<servlet-name>shops</servlet-name>
+		
+		<url-pattern>/shops</url-pattern>
+	
+	</servlet-mapping>
+		
+	<servlet-mapping>
+		
+		<servlet-name>categories</servlet-name>
+		
+		<url-pattern>/categories</url-pattern>
+	
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		
+		<servlet-name>products</servlet-name>
+		
+		<url-pattern>/products</url-pattern>
+	
+	</servlet-mapping>
+		
+	<servlet-mapping>
+		
+		<servlet-name>list</servlet-name>
+		
+		<url-pattern>/list</url-pattern>
+	
+	</servlet-mapping>
+			
+	<servlet-mapping>
+		
+		<servlet-name>minimum_category</servlet-name>
+		
+		<url-pattern>/minimum_category</url-pattern>
+	
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		
+		<servlet-name>min_prod</servlet-name>
+		
+		<url-pattern>/min_prod</url-pattern>
+	
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		
+		<servlet-name>mega</servlet-name>
+		
+		<url-pattern>/mega</url-pattern>
+	
+	</servlet-mapping>
+	
+	<context-param> 
+    
+		<description>Location of data</description> 
+
+		<param-name>data</param-name> 
+    
+		<param-value>/usr/share/apache-tomcat-7.0.32/webapps/super/data/</param-value> 
+	
+	</context-param>
+
+</web-app>
